@@ -1,0 +1,84 @@
+/*
+ * module.less
+ *  - description
+ *
+ *  - Components:
+ *    - component.less
+ */
+
+.hero {
+  background: url(../images/hero.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding-top: 300px;
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+  text-align: center;
+
+  .blurry-cam {
+    background: url(../images/hero-blur.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-top: 300px;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    z-index: 0;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 9;
+  }
+
+  .button.call-to-action {
+      margin-top: 100px;
+  }
+
+  h1, p {
+    display: inline-block;
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 25px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:nth-child(1)
+    {
+      background: fade(@text_highlight_color, 60%);
+    }
+    &:nth-child(5)
+    {
+      background: fade(@text_highlight_color, 80%);
+    }
+  }
+
+  .sub-heading {
+    margin-top: 100px;
+  }
+}
+
+body {
+  .section-wrapper:nth-child(even) {
+    background-color: @background_color;
+  }
+}
+
+.section-wrapper {
+  position: relative;
+  top: 100%;
+
+  section {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+  }
+}

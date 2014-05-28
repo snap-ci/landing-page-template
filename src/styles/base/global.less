@@ -1,0 +1,35 @@
+/*
+ * global.less
+ *  - rules applied to whole project (selection color, container sizes,…)
+ */
+
+@selection_color: #19bb9b;
+@selection_color_font: #fff;
+@text_highlight_color: #E4E4E4;
+@highlight_color: #F370E9;
+@background_color: #F8F8F8;
+
+::-moz-selection {
+  background: @selection_color;
+  color: @selection_color_font;
+  text-shadow: none;
+}
+
+::selection {
+  background: @selection_color;
+  color: @selection_color_font;
+  text-shadow: none;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
