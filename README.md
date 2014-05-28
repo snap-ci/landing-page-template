@@ -8,4 +8,8 @@ We're using Pho https://github.com/madebysource/pho-devstack
 
 Run ```npm install -g gulp yo generator-pho bower``` to get all the things
 
-Then ```gulp```
+Usage
+
+Run build system ```gulp```
+Open ```dist/index.html``` in your browser
+Edit files in src/, build will run automatically and page will be reloaded in browser(s)
